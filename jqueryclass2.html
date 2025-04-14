@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jqueryclass2</title>
+    <script src="jquery.js" type="text/javascript"></script>
+    <style>
+        #a{
+            width: 20%;
+            height: 100px;
+            background-color: aqua;
+            margin-top: 10px;
+            display: none;
+        }
+        #b{
+            width: 20%;
+            height: 100px;
+            background-color: aqua;
+            margin-top: 10px;
+            display: none;
+        }
+        #c{
+            width: 20%;
+            height: 100px;
+            background-color: aqua;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button>VIEW ALL PRODUCTS </button>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+</body>
+</html>
+<script>
+    $(document).ready(function() {
+$("button").click(function(){
+$("#a").fadeIn();
+$("#b").fadeIn("slow");
+$("#c").fadeIn(4000);
+});
+    });
+</script>

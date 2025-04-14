@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>class 4</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <div>press up </div>
+    <p id="a">enter this paragraph</p>
+</body>
+</html>
+<script>
+//click automatically text add
+//mouseup jab mouse ka button daba kar chod dengy tab text ayega 
+    $(document).ready(function(){
+$("div").css("cursor" ,"pointer").mouseup(function(){
+$(this).after("<p style = 'color:green;'>mouse button released.</p>");
+});
+    });
+//click automatically text add
+//mousedown jab mouse ka button press hota hy tab kam karta hy 
+    $(document).ready(function() {
+$("div").css("cursor" , "pointer").mousedown(function(){
+$(this).after("<p style='color:blue;'>mouse button pressed out .</p>");
+});
+    });
+
+//jab cursor text par pochyga alert message ayega !
+    $(document).ready(function(){
+$("#a").mouseenter(function(){
+alert("you enter please!");
+});
+    });
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="jquery.js" type="text/javascript"></script>
+    <style>
+        #r{
+width: 200px;
+height: 200px;
+background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <div id="r"></div>
+    <button id="a">red</button>
+    <button id="b">blue</button>
+    <button id="c">green</button>
+    <button id="d">black</button>
+    <button id="e">orange</button>
+    <button id="f">pink</button>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+$("#a").click(function(){
+$("#r").css("background-color" , "red");
+});
+
+$("#b").click(function(){
+$("#r").css("background-color" , "blue");
+});
+
+$("#c").click(function(){
+$("#r").css("background-color" , "green");
+});
+
+$("#d").click(function(){
+$("#r").css("background-color" , "black");
+});
+
+$("#e").click(function(){
+$("#r").css("background-color" , "orange");
+});
+
+$("#f").click(function(){
+$("#r").css("background-color" , "pink");
+});
+    });
+</script>

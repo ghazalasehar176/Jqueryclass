@@ -1,2 +1,2 @@
 # Jqueryclass
-jquery class
+jquery class a
